@@ -1,0 +1,16 @@
+{
+  "name": "dpd-styles",
+  "repo": "jeffbcross/dpd-styles",
+  "description": "LESS, CSS and JS for deployd network sites.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "dpd-styles.css"
+  ]
+}
