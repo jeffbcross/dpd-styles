@@ -1,0 +1,48 @@
+.navbar {
+  .brand { padding-top: 15px; }
+  #social { overflow: hidden; height: 37px; margin-top: 19px; padding: 0 13px; }
+  .navbar-inner { border:none; .box-shadow(0); }
+  .nav {
+    [class*="icon-"] { font-size: 0.8em; }
+    & > li > a { .box-shadow(none); line-height: 21px; padding: @padding * 1.5; text-shadow: none; }
+    & > li.active a { background:none; .box-shadow(none);
+      &:hover { background:none; }
+    }
+  }
+  .login-link { 
+    .avatar { margin-right: @padding; }
+    .username { color:@white; font-size:13px; display:block; padding: @padding * 0.75 0 @padding / 2; }
+    .separator { display:inline-block; padding-top:3px;}
+    &.logged-in { font-size:12px; line-height:12px; padding: @padding / 4; min-width:250px;
+      a { color: #42b1cd; font-size: 12px; }
+      a:hover { color: lighten(@blue, 10%); text-decoration: none; }  
+    }
+  }
+}
+
+.secondary-nav { /*top:56px;*/
+  .navbar-inner { min-height: 38px; #gradient.vertical(@green, @green); border: none;
+    .nav li:first-child { margin-left: 178px; background:url('//cloud.deployd.com/img/nav-up-arrow.png') no-repeat 5px top; padding-top:6px; margin-top:-6px;}
+    .nav li a { margin-right:33px; padding: 0; line-height:38px; color: fadeout(@white, 40%); font-size:14px; .box-shadow(none);
+      &:hover { color: @white; }
+    }
+    .nav li.active a { background:none; color: @white;
+      &:hover{ background:none; .box-shadow(none); }
+    }
+  }
+}
+
+.body-navbar .navbar-inner { #gradient.vertical(@green, darken(@green, 5%)); border: 1px solid darken(@green, 10%);
+  .nav > li > a { padding: @padding @padding * 1.5; color: fadeout(@white, 20%); 
+    &:hover { color: @white; }
+  }
+  .nav > li.active > a { background: darken(@green, 10%); color: @white; }  
+}
+
+
+.sub-nav { width: 535px; margin: 0 auto !important;
+  li { float: left; text-align: center; padding: 10px 38px; }
+  a:hover { text-decoration: none; color: #b9e9e7; }
+  a span { font-size: 12px; }
+  i { font-size: 25px; display: block; text-align: center; width: auto; }
+}

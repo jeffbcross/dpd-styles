@@ -1,0 +1,88 @@
+footer {
+  background-color: @green;
+  margin-top:50px;
+  padding:50px 0;
+  
+  .navigation, .email-container {
+    width:571px;
+    dl {
+      width:24%;
+      float:left;
+      
+      dt {
+        color:rgba(255,255,255,0.6);
+        font-size:16px;
+        font-weight:normal;
+        line-height:30px;
+        margin-bottom:5px;
+        padding-bottom:5px;
+        margin-bottom: 5px;
+      }
+
+      dd {
+        margin-left:0;
+        font-size:11px;
+        line-height:16px;
+        a {
+          color:#9fc7c5;  
+        }
+      }
+    }
+  }
+  .logo-container {
+    width:227px;
+    .logo {
+      padding:9px 0;
+      border: 1px solid #68afac;
+      text-align: center;
+      border-top-width: 0;
+      border-bottom-width: 0;
+    }
+  }
+  .border-left-radius(@size){
+    border-bottom-left-radius: @size;
+    -webkit-border-bottom-left-radius: @size;
+    -moz-border-bottom-left-radius: @size;
+    border-top-left-radius: @size;
+    -webkit-border-top-left-radius: @size;
+    -moz-border-top-left-radius: @size;
+  }
+
+  .border-right-radius (@size) {
+    border-bottom-right-radius: @size;
+    -webkit-border-bottom-right-radius: @size;
+    -moz-border-bottom-right-radius: @size;
+    border-top-right-radius: @size;
+    -webkit-border-top-right-radius: @size;
+    -moz-border-top-right-radius: @size; 
+  }
+  .email-container {
+    width:262px;
+    dl {
+      width: 100%;
+    }
+    input.email {
+      .border-left-radius(5px);
+      .border-right-radius(0);
+      float:left;
+      padding:0 12px;
+      width:121px;
+      background-color:#e5f7f4;
+      border: 1px inset @grayLight;
+      font-family:"Helvetica Neue", "Helvetica", Arial, sans-serif;
+      height:32px;
+      line-height:32px;
+      font-size: 14px;
+      color:#363535;
+    }
+    input#mc-embedded-subscribe {
+      height:34px;
+      width:81px;
+      border:1px solid #666666;
+      color:#fff;
+      font-size:12px;
+      font-family:"Helvetica Neue", "Helvetica", Arial, sans-serif;
+      #gradient.vertical(#414040, #2b2a2a);
+    }
+  } 
+}
