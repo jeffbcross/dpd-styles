@@ -11,6 +11,7 @@
     "index.js"
   ],
   "styles": [
-    "dpd-styles.css"
+    "dpd-styles.css",
+    "less/deployd.less"
   ]
 }
